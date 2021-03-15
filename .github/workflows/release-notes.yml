@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: colespencer1453/release-notes-action-python@v3
+      uses: colespencer1453/release-notes-action-python@v4
       with:
         myInput: github.event.payload
     # Use the output from the `hello` step
