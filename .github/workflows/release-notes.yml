@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: colespencer1453/release-notes-action-python@v5
+      uses: colespencer1453/release-notes-action-python@v7
       with:
         myInput: ${{ toJson(github.event) }}
     # Use the output from the `hello` step
