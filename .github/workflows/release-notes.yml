@@ -7,9 +7,9 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: colespencer1453/release-notes-action-python@v4
+      uses: colespencer1453/release-notes-action-python@v5
       with:
-        myInput: ${{ github.event.type }}
+        myInput: Testing
     # Use the output from the `hello` step
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
