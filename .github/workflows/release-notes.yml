@@ -9,7 +9,7 @@ jobs:
       id: hello
       uses: colespencer1453/release-notes-action-python@v4
       with:
-        myInput: github.event.payload
+        myInput: ${{ github.event.comment.id }}
     # Use the output from the `hello` step
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
